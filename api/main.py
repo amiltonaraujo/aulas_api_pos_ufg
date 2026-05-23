@@ -27,6 +27,6 @@ app = FastAPI(
     dependencies=[Depends(common_api_token)],
 )
 
-
+# Inclusão das rotas (endpoints)
 app.include_router(router=llm_router, tags=["IA"])
 app.include_router(router=operacoes_router, tags=["Operações matemáticas"])
