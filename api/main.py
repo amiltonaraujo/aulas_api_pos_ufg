@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
 
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 from utils import common_api_token
 from routers.llm_router import router as llm_router
 from routers.operacoes_router import router as operacoes_router
